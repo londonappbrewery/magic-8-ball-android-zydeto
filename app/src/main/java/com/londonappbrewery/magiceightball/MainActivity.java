@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView ballDisplay = findViewById(R.id.image_eightBall);
         Button myButton = findViewById(R.id.ask_button);
 
-        final int[] ballArray = {
+        final int[] ballArray = new int[] {
                 R.drawable.ball1,
                 R.drawable.ball2,
                 R.drawable.ball3,
@@ -33,5 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 ballDisplay.setImageResource(ballArray[number]);
             }
         });
+
     }
 }
